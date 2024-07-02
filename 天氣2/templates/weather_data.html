@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- 引入 Plotly.js 庫 -->
+</head>
+<body>
+    <h1>Weather Data</h1>
+    {{ table | safe }}  <!-- 在網頁上顯示數據表格 -->
+    <h2>Temperature Chart</h2>
+    {{ graph | safe }}  <!-- 在網頁上顯示長條圖 -->
+</body>
+</html>
